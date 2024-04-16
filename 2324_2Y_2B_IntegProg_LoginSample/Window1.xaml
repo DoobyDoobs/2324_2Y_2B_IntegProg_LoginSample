@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800" Closing="Window_Closing">
     <Grid>
-        
+        <Label x:Name="welcum" Content="Label" HorizontalAlignment="Center" Margin="0,29,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="142" Width="800" FontSize="50"/>
+        <TextBox x:Name= "UserNameChanger" HorizontalAlignment="Center" Margin="0,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="364" Height="60" TextChanged="UserNameChanger_TextChanged"/>
+        <Button x:Name = "SubmitChanges" Content="Submit" HorizontalAlignment="Center" Margin="0,328,0,0" VerticalAlignment="Top" Width="164" Height="33" Click="SubmitChanges_Click"/>
+
     </Grid>
 </Window>

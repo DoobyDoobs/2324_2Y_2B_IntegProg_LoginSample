@@ -22,12 +22,22 @@ namespace _2324_2Y_2B_IntegProg_LoginSample
         public Window1()
         {
             InitializeComponent();
+            welcum.Content = ("Welcome " + WIndowManager.UserName.ToString() + "!");
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             MainWindow mw = new MainWindow();
             mw.Show();
+        }
+
+        private void UserNameChanger_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+        private void SubmitChanges_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

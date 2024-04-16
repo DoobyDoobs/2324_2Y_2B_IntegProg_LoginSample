@@ -53,6 +53,8 @@ namespace _2324_2Y_2B_IntegProg_LoginSample
                             else
                                 messageString += $" Welcome back {s.LoginName}! Havent seen you since {s.LoginDate}";
 
+                            WIndowManager.UserName = s.LoginName.ToString();
+
                             MessageBox.Show(messageString);
                             s.LoginDate = DateTime.Now;
 
